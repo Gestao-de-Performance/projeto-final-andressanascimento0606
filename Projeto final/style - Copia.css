@@ -1,4 +1,8 @@
-*
+html{
+    background-color: #f2cea0;
+    margin: 1%;
+}
+
 .cabecalho{
     justify-content: space-between;
     list-style-type: none;
@@ -6,15 +10,114 @@
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
+    background-color: rgb(235, 205, 145);
+    padding: unset;
+    border: groove;
+    color: blue;
 }
 
-.inicio{ 
+.inicio{
     font-style: italic;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color:#f2cea0;
+}
+
+.p{
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-end;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: flex-start;
+    }
+
+.fundo{
+    background-color: #e6ba86;
+}
+
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: x-large;
+}
+
+.estrela{
+    display: flex;
+}
+
+.produtos{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.posicao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.lista {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        font-style: oblique;
+        font-weight: bold;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
     justify-content: center;
-    float: right;
-    width: 50%;
-    height: 70%;
-    font-size: 1.5rem;
-    align-content: start;
-    text-align: center;}
+}
+
+.animacao{
+    animation: piscar 2s infinite;
+
+}
+
+@keyframes piscar {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }    
+    100%{
+        opacity: 1;
+    }
+}
